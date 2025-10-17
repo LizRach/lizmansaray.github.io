@@ -25,37 +25,63 @@ layout: default
     50% { box-shadow: 0 0 30px rgba(0,255,255,0.8); }
     100% { box-shadow: 0 0 15px rgba(0,255,255,0.4); }
   }
-  
+
   /* 💻 Cyber-themed project and section cards */
-.card {
-  background-color: #0a0f24;   /* deep navy background */
-  border: 2px solid #00ffff;   /* neon teal border */
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 800px;
-  color: #e6f1ff;
-  box-shadow: 0 0 10px rgba(0,255,255,0.2);
-  transition: all 0.3s ease-in-out;
-}
+  .card {
+    background-color: #0a0f24;
+    border: 2px solid #00ffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    color: #e6f1ff;
+    box-shadow: 0 0 10px rgba(0,255,255,0.2);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    z-index: 1;
+  }
 
-.card:hover {
-  box-shadow: 0 0 25px rgba(0,255,255,0.7);
-  transform: translateY(-3px);
-}
+  .card:hover {
+    box-shadow: 0 0 25px rgba(0,255,255,0.7);
+    transform: translateY(-3px);
+  }
 
-/* Glow effect for titles inside cards */
-.card h3, .card strong {
-  color: #00ffff;
-  text-shadow: 0 0 5px #00ffff;
-}
+  .card h3, .card strong {
+    color: #00ffff;
+    text-shadow: 0 0 5px #00ffff;
+  }
 
-</style>
+  /* 🌌 Subtle animated background gradient */
+  body {
+    background: linear-gradient(-45deg, #0a0f24, #001f3f, #0a0f24, #002b5c);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    margin: 0;
+    font-family: 'Helvetica', sans-serif;
+  }
 
-<div class="wrapper">
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
 
-  <!-- 💙 Cybersecurity-Themed Header with Centered Glowing Image -->
-  <header style="
+  /* 💠 Subtle digital grid overlay */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(rgba(0,255,255,0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* 💙 Cybersecurity-Themed Header with Centered Glowing Image */
+  header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -65,18 +91,50 @@ layout: default
     background: linear-gradient(135deg, #0a0f24, #001f3f, #0a0f24);
     border-bottom: 2px solid #00ffff;
     text-align: center;
-  ">
-    <img src="profile.jpg" alt="Elizabeth Mansaray" 
-         style="width:150px;height:150px;border-radius:50%;object-fit:cover;margin-bottom:15px;
-                animation: glowPulse 4s infinite ease-in-out;">
+    position: relative;
+    z-index: 1;
+  }
 
-    <h1 style="color:#00ffff; margin-bottom:5px;">Elizabeth Mansaray</h1>
-    <p class="subtitle" style="color:#b0c4de;">Cybersecurity Enthusiast | Security Analyst | IT Professional</p>
+  header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    animation: glowPulse 4s infinite ease-in-out;
+  }
+
+  header h1 {
+    color: #00ffff;
+    margin-bottom: 5px;
+  }
+
+  header .subtitle {
+    color: #b0c4de;
+  }
+
+  /* 🔗 Neon link hover effect */
+  a {
+    color: #00ffff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  a:hover {
+    color: #64ffda;
+    text-shadow: 0 0 10px #00ffff;
+  }
+</style>
+
+<div class="wrapper">
+  <header>
+    <img src="profile.jpg" alt="Elizabeth Mansaray">
+    <h1>Elizabeth Mansaray</h1>
+    <p class="subtitle">Cybersecurity Enthusiast | Security Analyst | IT Professional</p>
   </header>
 
-  <!-- Main markdown content -->
   <main class="content">
     {{ content }}
   </main>
-
 </div>
+
