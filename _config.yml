@@ -1,3 +1,4 @@
+theme: null
 remote_theme: sproogen/resume-theme
 plugins:
   - jekyll-remote-theme
