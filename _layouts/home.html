@@ -8,10 +8,8 @@ layout: default
     background: linear-gradient(-45deg, #0a0f24, #001f3f, #0a0f24, #002b5c);
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
-    /* Crucial for centering - remove default body margin */
     margin: 0; 
     font-family: 'Helvetica', sans-serif;
-    /* Fallback text color for all body content */
     color: #e6f1ff; 
   }
 
@@ -24,7 +22,6 @@ layout: default
   /* Wrapper to center the entire content */
   .wrapper {
     max-width: 900px;
-    /* CORRECT: Centers the block element horizontally */
     margin: 0 auto; 
     padding: 0 20px;
     position: relative;
@@ -51,20 +48,21 @@ layout: default
   }
 
   header img {
-    /* FIX: Ensures your circular image is the correct size */
-    width: 150px; 
-    height: 150px;
+    /* FIX: Use !important to override any conflicting styles and keep the size */
+    width: 150px !important; 
+    height: 150px !important;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 15px;
     animation: glowPulse 4s infinite ease-in-out;
   }
   
-  /* FIX: Ensures all other images inside the main content are not huge */
+  /* ADDED: Ensures any image in the main content area (from {{ content }}) is responsive but constrained */
   main img {
     max-width: 100%; 
     height: auto;
     display: block; 
+    margin: 10px auto; /* Centers images in the main content */
   }
 
   header h1 {
@@ -76,33 +74,45 @@ layout: default
     color: #b0c4de;
   }
 
-  /* ADDED: Navigation Bar Styling with Glow effect */
-.main-nav {
-    margin-top: 20px;
-    display: flex;
-    gap: 30px; /* Space between links */
-}
-
-.main-nav a {
-    color: #00ffff;
-    text-decoration: none;
-    padding: 5px 10px;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    transition: all 0.3s ease-in-out;
-    font-size: 1.1em;
-    letter-spacing: 1px;
-}
-
-.main-nav a:hover {
-    color: #64ffda;
-    border: 1px solid #00ffff;
-    /* Neon glow effect on hover */
-    box-shadow: 0 0 10px #00ffff, 0 0 20px rgba(0,255,255,0.5);
-    transform: scale(1.05);
-}
+  /* Navigation Bar Styling with Glow effect (Tabs) */
+  .main-nav {
+      margin-top: 20px;
+      display: flex;
+      gap: 30px; 
+  }
   
-  /* ✨ Neon section headings */
+  .main-nav a {
+      color: #00ffff;
+      text-decoration: none;
+      padding: 5px 10px;
+      border: 1px solid transparent;
+      border-radius: 5px;
+      transition: all 0.3s ease-in-out;
+      font-size: 1.1em;
+      letter-spacing: 1px;
+  }
+  
+  .main-nav a:hover {
+      color: #64ffda;
+      border: 1px solid #00ffff;
+      /* Glow effect on hover */
+      box-shadow: 0 0 10px #00ffff, 0 0 20px rgba(0,255,255,0.5);
+      transform: scale(1.05);
+  }
+  
+  /* FIX: Styles for the section-title span used in index.md */
+  .section-title {
+      color: #00ffff;
+      text-shadow: 0 0 5px #00ffff;
+      font-weight: bold;
+      /* Makes the text centered when using the <h3> tag */
+      display: block; 
+      text-align: center;
+      margin-top: 50px;
+      font-size: 1.5em; 
+  }
+  
+  /* ✨ Neon section headings (using h2 for the main section titles) */
   h2, h3 {
     color: #00ffff;
     text-shadow: 0 0 5px #00ffff;
@@ -125,11 +135,10 @@ layout: default
 
   /* Card styling */
   .card {
-    background-color: #001f3f; /* deep blue theme */
+    background-color: #001f3f; 
     border: 2px solid #00ffff;
     border-radius: 10px;
     padding: 20px;
-    /* CORRECT: Centers the card within the wrapper */
     margin: 20px auto; 
     max-width: 800px;
     color: #e6f1ff;
@@ -159,7 +168,7 @@ layout: default
     animation: fadeInUp 1s forwards;
   }
 
-  /* Stagger cards (Adjusted selector based on common Jekyll structure) */
+  /* Stagger cards */
   .wrapper .card:nth-of-type(1) { animation-delay: 0.3s; }
   .wrapper .card:nth-of-type(2) { animation-delay: 0.5s; }
   .wrapper .card:nth-of-type(3) { animation-delay: 0.7s; }
