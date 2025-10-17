@@ -3,7 +3,6 @@ layout: default
 ---
 
 <style>
-  /* 🌌 Animated background gradient */
   body {
     background: linear-gradient(-45deg, #0a0f24, #001f3f, #0a0f24, #002b5c);
     background-size: 400% 400%;
@@ -18,14 +17,13 @@ layout: default
     100% { background-position: 0% 50%; }
   }
 
-  /* 🌟 Wrapper centers everything */
   .wrapper {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 20px;
   }
 
-  /* 💙 Header */
+  /* 💙 Header with glowing profile */
   header {
     display: flex;
     flex-direction: column;
@@ -63,17 +61,18 @@ layout: default
   }
 
   /* ✨ Neon headings */
-  h2, h3 {
+  h2.section-title, h3 {
     color: #00ffff;
     text-shadow: 0 0 5px #00ffff;
   }
 
-  h2 {
+  h2.section-title {
     font-size: 2em;
     margin-top: 50px;
     margin-bottom: 20px;
     animation: textGlow 4s ease-in-out infinite;
     letter-spacing: 1px;
+    text-align: center;
   }
 
   @keyframes textGlow {
@@ -82,37 +81,36 @@ layout: default
     100% { text-shadow: 0 0 5px #00ffff; color: #00ffff; }
   }
 
-  /* 💻 Markdown content container */
-  .markdown-content {
-    text-align: center;       /* centers headings and paragraphs */
-  }
-
-  /* 💻 Cards */
-  .markdown-content .card {
-    display: block;
-    margin: 20px auto;        /* center cards horizontally */
-    text-align: left;         /* keep card content readable */
+  /* 💻 Card styling */
+  .card {
     max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
     background-color: #001f3f;
     border: 2px solid #00ffff;
     border-radius: 10px;
-    padding: 20px;
     color: #e6f1ff;
     box-shadow: 0 0 10px rgba(0,255,255,0.2);
+    text-align: left;
     transition: all 0.3s ease-in-out;
   }
 
-  .markdown-content .card:hover {
-    box-shadow: 0 0 25px rgba(0,255,255,0.7);
-    transform: translateY(-3px);
-  }
-
-  .markdown-content .card h3, .markdown-content .card strong {
+  .card h3, .card strong {
     color: #00ffff;
     text-shadow: 0 0 5px #00ffff;
   }
 
-  /* Fade-in animation for content */
+  .card:hover {
+    box-shadow: 0 0 25px rgba(0,255,255,0.7);
+    transform: translateY(-3px);
+  }
+
+  /* Center Markdown content */
+  .markdown-content {
+    text-align: center;
+  }
+
+  /* Fade-in effect for cards */
   .markdown-content > * {
     opacity: 0;
     animation: fadeInUp 1s forwards;
@@ -123,7 +121,6 @@ layout: default
     100% { opacity: 1; transform: translateY(0); }
   }
 
-  /* Stagger card fade-in */
   .markdown-content .card:nth-of-type(1) { animation-delay: 0.3s; }
   .markdown-content .card:nth-of-type(2) { animation-delay: 0.5s; }
   .markdown-content .card:nth-of-type(3) { animation-delay: 0.7s; }
@@ -131,7 +128,6 @@ layout: default
   .markdown-content .card:nth-of-type(5) { animation-delay: 1.1s; }
   .markdown-content .card:nth-of-type(6) { animation-delay: 1.3s; }
 
-  /* Links */
   a {
     color: #00ffff;
     text-decoration: none;
@@ -151,7 +147,7 @@ layout: default
     <p class="subtitle">Cybersecurity Enthusiast | Security Analyst | IT Professional</p>
   </header>
 
-  <main class="content">
+  <main class="markdown-content">
     {{ content }}
   </main>
 </div>
