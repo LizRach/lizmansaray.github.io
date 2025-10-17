@@ -24,7 +24,7 @@ layout: default
   /* Wrapper to center the entire content */
   .wrapper {
     max-width: 900px;
-    /* This line is CORRECT for centering the container */
+    /* CORRECT: Centers the block element horizontally */
     margin: 0 auto; 
     padding: 0 20px;
     position: relative;
@@ -51,13 +51,21 @@ layout: default
   }
 
   header img {
-    width: 150px;
+    /* FIX: Ensures your circular image is the correct size */
+    width: 150px; 
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 15px;
     animation: glowPulse 4s infinite ease-in-out;
   }
+  
+  /* FIX: Ensures all other images inside the main content are not huge */
+  main img {
+    max-width: 100%; 
+    height: auto;
+    display: block; 
+  }
 
   header h1 {
     color: #00ffff;
@@ -68,6 +76,32 @@ layout: default
     color: #b0c4de;
   }
 
+  /* ADDED: Navigation Bar Styling with Glow effect */
+.main-nav {
+    margin-top: 20px;
+    display: flex;
+    gap: 30px; /* Space between links */
+}
+
+.main-nav a {
+    color: #00ffff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}
+
+.main-nav a:hover {
+    color: #64ffda;
+    border: 1px solid #00ffff;
+    /* Neon glow effect on hover */
+    box-shadow: 0 0 10px #00ffff, 0 0 20px rgba(0,255,255,0.5);
+    transform: scale(1.05);
+}
+  
   /* ✨ Neon section headings */
   h2, h3 {
     color: #00ffff;
@@ -89,20 +123,13 @@ layout: default
     100% { text-shadow: 0 0 5px #00ffff; color: #00ffff; }
   }
 
-  /* Remove this redundant centering since .wrapper already centers everything */
-  /* main.content {
-    max-width: 900px;
-    margin: 0 auto;
-    padding-bottom: 50px;
-  } */
-
   /* Card styling */
   .card {
-    background-color: #001f3f; 
+    background-color: #001f3f; /* deep blue theme */
     border: 2px solid #00ffff;
     border-radius: 10px;
     padding: 20px;
-    /* This line is CORRECT for centering the card within its container */
+    /* CORRECT: Centers the card within the wrapper */
     margin: 20px auto; 
     max-width: 800px;
     color: #e6f1ff;
@@ -158,6 +185,12 @@ layout: default
     <img src="profile.jpg" alt="Elizabeth Mansaray">
     <h1>Elizabeth Mansaray</h1>
     <p class="subtitle">Cybersecurity Enthusiast | Security Analyst | IT Professional</p>
+
+    <nav class="main-nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <main>
