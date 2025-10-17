@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+    <style>
+      body {
+        font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background-color: #f7f9fc;
+        color: #222;
+        margin: 0 auto;
+        max-width: 800px;
+        padding: 40px 20px;
+      }
+      h1 {
+        color: #1d3557;
+      }
+      .subtitle {
+        color: #457b9d;
+        margin-top: -10px;
+        margin-bottom: 40px;
+      }
+      a {
+        color: #1d3557;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      header, main {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    {{ content }}
+  </body>
+</html>
