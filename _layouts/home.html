@@ -3,206 +3,158 @@ layout: default
 ---
 
 <style>
-  /* 🌌 Background with subtle animated gradient */
-  body {
-    background: linear-gradient(-45deg, #0a0f24, #001f3f, #0a0f24, #002b5c);
-    background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;
-    margin: 0; 
-    font-family: 'Helvetica', sans-serif;
-    color: #e6f1ff; 
-  }
-
-  @keyframes gradientBG {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-
-  /* Wrapper to center the entire content */
-  .wrapper {
-    max-width: 900px;
-    margin: 0 auto; 
-    padding: 0 20px;
-    position: relative;
-    z-index: 1;
-  }
-
-  /* 💙 Header with glowing profile image */
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 20px;
-    background: linear-gradient(135deg, #0a0f24, #001f3f, #0a0f24);
-    border-bottom: 2px solid #00ffff;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-
-  @keyframes glowPulse {
-    0% { box-shadow: 0 0 15px rgba(0,255,255,0.4); }
-    50% { box-shadow: 0 0 30px rgba(0,255,255,0.8); }
-    100% { box-shadow: 0 0 15px rgba(0,255,255,0.4); }
-  }
-
-  header img {
-    /* FIX: Use !important to override any conflicting styles and keep the size */
-    width: 150px !important; 
-    height: 150px !important;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
-    animation: glowPulse 4s infinite ease-in-out;
-  }
-  
-  /* ADDED: Ensures any image in the main content area (from {{ content }}) is responsive but constrained */
-  main img {
-    max-width: 100%; 
-    height: auto;
-    display: block; 
-    margin: 10px auto; /* Centers images in the main content */
+  /* 🌌 Background with subtle animated gradient */
+  body {
+    background: linear-gradient(-45deg, #0a0f24, #001f3f, #0a0f24, #002b5c);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    margin: 0;
+    font-family: 'Helvetica', sans-serif;
   }
 
-  header h1 {
-    color: #00ffff;
-    margin-bottom: 5px;
-  }
-
-  header .subtitle {
-    color: #b0c4de;
-  }
-
-  /* Navigation Bar Styling with Glow effect (Tabs) */
-  .main-nav {
-      margin-top: 20px;
-      display: flex;
-      gap: 30px; 
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
   }
-  
-  .main-nav a {
-      color: #00ffff;
-      text-decoration: none;
-      padding: 5px 10px;
-      border: 1px solid transparent;
-      border-radius: 5px;
-      transition: all 0.3s ease-in-out;
-      font-size: 1.1em;
-      letter-spacing: 1px;
+
+  /* Wrapper to center the entire content */
+  .wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
   }
-  
-  .main-nav a:hover {
-      color: #64ffda;
-      border: 1px solid #00ffff;
-      /* Glow effect on hover */
-      box-shadow: 0 0 10px #00ffff, 0 0 20px rgba(0,255,255,0.5);
-      transform: scale(1.05);
+
+  /* 💙 Header with glowing profile image */
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #0a0f24, #001f3f, #0a0f24);
+    border-bottom: 2px solid #00ffff;
+    text-align: center;
+    margin-bottom: 40px;
   }
-  
-  /* FIX: Styles for the section-title span used in index.md */
-  .section-title {
-      color: #00ffff;
-      text-shadow: 0 0 5px #00ffff;
-      font-weight: bold;
-      /* Makes the text centered when using the <h3> tag */
-      display: block; 
-      text-align: center;
-      margin-top: 50px;
-      font-size: 1.5em; 
+
+  @keyframes glowPulse {
+    0% { box-shadow: 0 0 15px rgba(0,255,255,0.4); }
+    50% { box-shadow: 0 0 30px rgba(0,255,255,0.8); }
+    100% { box-shadow: 0 0 15px rgba(0,255,255,0.4); }
   }
-  
-  /* ✨ Neon section headings (using h2 for the main section titles) */
-  h2, h3 {
-    color: #00ffff;
-    text-shadow: 0 0 5px #00ffff;
-  }
 
-  h2 {
-    text-align: center;
-    font-size: 2em;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    animation: textGlow 4s ease-in-out infinite;
-    letter-spacing: 1px;
-  }
+  header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    animation: glowPulse 4s infinite ease-in-out;
+  }
 
-  @keyframes textGlow {
-    0% { text-shadow: 0 0 5px #00ffff; color: #00ffff; }
-    50% { text-shadow: 0 0 20px #00ffff; color: #00e6e6; }
-    100% { text-shadow: 0 0 5px #00ffff; color: #00ffff; }
-  }
+  header h1 {
+    color: #00ffff;
+    margin-bottom: 5px;
+  }
 
-  /* Card styling */
-  .card {
-    background-color: #001f3f; 
-    border: 2px solid #00ffff;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px auto; 
-    max-width: 800px;
-    color: #e6f1ff;
-    box-shadow: 0 0 10px rgba(0,255,255,0.2);
-    transition: all 0.3s ease-in-out;
-  }
+  header .subtitle {
+    color: #b0c4de;
+  }
 
-  .card:hover {
-    box-shadow: 0 0 25px rgba(0,255,255,0.7);
-    transform: translateY(-3px);
-  }
+  /* ✨ Neon section headings */
+  h2, h3 {
+    color: #00ffff;
+    text-shadow: 0 0 5px #00ffff;
+  }
 
-  .card h3, .card strong {
-    color: #00ffff;
-    text-shadow: 0 0 5px #00ffff;
-  }
+  h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    animation: textGlow 4s ease-in-out infinite;
+    letter-spacing: 1px;
+  }
 
-  /* Fade-in animation for cards and sections */
-  @keyframes fadeInUp {
-    0% { opacity: 0; transform: translateY(20px); }
-    100% { opacity: 1; transform: translateY(0); }
-  }
+  @keyframes textGlow {
+    0% { text-shadow: 0 0 5px #00ffff; color: #00ffff; }
+    50% { text-shadow: 0 0 20px #00ffff; color: #00e6e6; }
+    100% { text-shadow: 0 0 5px #00ffff; color: #00ffff; }
+  }
 
-  /* Use wrapper's children for animation */
-  .wrapper > * {
-    opacity: 0;
-    animation: fadeInUp 1s forwards;
-  }
+  /* Main content area - center everything */
+  main.content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
 
-  /* Stagger cards */
-  .wrapper .card:nth-of-type(1) { animation-delay: 0.3s; }
-  .wrapper .card:nth-of-type(2) { animation-delay: 0.5s; }
-  .wrapper .card:nth-of-type(3) { animation-delay: 0.7s; }
-  .wrapper .card:nth-of-type(4) { animation-delay: 0.9s; }
-  .wrapper .card:nth-of-type(5) { animation-delay: 1.1s; }
-  .wrapper .card:nth-of-type(6) { animation-delay: 1.3s; }
+  /* Card styling */
+  .card {
+    background-color: #001f3f; /* deep blue theme */
+    border: 2px solid #00ffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    color: #e6f1ff;
+    box-shadow: 0 0 10px rgba(0,255,255,0.2);
+    transition: all 0.3s ease-in-out;
+  }
 
-  /* Links styling */
-  a {
-    color: #00ffff;
-    text-decoration: none;
-    transition: 0.3s;
-  }
+  .card:hover {
+    box-shadow: 0 0 25px rgba(0,255,255,0.7);
+    transform: translateY(-3px);
+  }
 
-  a:hover {
-    color: #64ffda;
-    text-shadow: 0 0 10px #00ffff;
-  }
+  .card h3, .card strong {
+    color: #00ffff;
+    text-shadow: 0 0 5px #00ffff;
+  }
+
+  /* Fade-in animation for cards and sections */
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  .content > * {
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+  }
+
+  /* Stagger cards */
+  .content .card:nth-of-type(1) { animation-delay: 0.3s; }
+  .content .card:nth-of-type(2) { animation-delay: 0.5s; }
+  .content .card:nth-of-type(3) { animation-delay: 0.7s; }
+  .content .card:nth-of-type(4) { animation-delay: 0.9s; }
+  .content .card:nth-of-type(5) { animation-delay: 1.1s; }
+  .content .card:nth-of-type(6) { animation-delay: 1.3s; }
+
+  /* Links styling */
+  a {
+    color: #00ffff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  a:hover {
+    color: #64ffda;
+    text-shadow: 0 0 10px #00ffff;
+  }
 </style>
 
 <div class="wrapper">
-  <header>
-    <img src="profile.jpg" alt="Elizabeth Mansaray">
-    <h1>Elizabeth Mansaray</h1>
-    <p class="subtitle">Cybersecurity Enthusiast | Security Analyst | IT Professional</p>
+  <header>
+    <img src="profile.jpg" alt="Elizabeth Mansaray">
+    <h1>Elizabeth Mansaray</h1>
+    <p class="subtitle">Cybersecurity Enthusiast | Security Analyst | IT Professional</p>
+  </header>
 
-    <nav class="main-nav">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <main>
-    {{ content }}
-  </main>
+  <main class="content">
+    {{ content }}
+  </main>
 </div>
