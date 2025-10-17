@@ -12,7 +12,7 @@ I’m constantly learning, building projects, and exploring how technology can b
 ### 🧠 About Me
 
 <div class="card">
-  <p>Hi, I'm <strong>Elizabeth Mansaray</strong> -a cybersecurity enthusiast with a love for uncovering how systems work and how to protect them. My journey began with curiosity - wanting to understand the “why” behind security breaches and how technology can be both powerful and vulnerable at the same time.</p>
+  <p>Hi, I'm <strong>Elizabeth Mansaray</strong>, a cybersecurity enthusiast with a love for uncovering how systems work and how to protect them. My journey began with curiosity - wanting to understand the “why” behind security breaches and how technology can be both powerful and vulnerable at the same time.</p>
 
   <p>I enjoy working on hands-on labs and projects that explore threat detection, network security, and digital forensics. Whether it’s analyzing packets, configuring firewalls, or investigating a simulated incident, I’m always eager to learn, experiment, and grow so i can help protect data.</p>
 
@@ -61,9 +61,23 @@ I’m constantly learning, building projects, and exploring how technology can b
 ---
 
 ### 📫 Contact
-- **LinkedIn:** [linkedin.com/in/elizabethrachaelmansaray](https://linkedin.com/in/elizabethrachaelmansaray)  
-- **GitHub:** [github.com/LizRach](https://github.com/LizRach)  
-- **Email:** chelmans09@gmail.com
+
+<div class="card">
+  <p>Thank you for visiting my portfolio! I’m always open to connecting with people who share an interest in cybersecurity, technology, or creative problem-solving.</p>
+
+  <p>If you’d like to reach out about collaboration, mentorship, or opportunities — feel free to send me a message or connect on LinkedIn.</p>
+
+  <p><strong>Let’s Connect:</strong></p>
+
+  <ul>
+    <li>📧 <a href="mailto:chelmans09@gmail.com">chelmans09@gmail.com</a></li>
+    <li>💼 <a href="https://www.linkedin.com/in/elizabethrachaelmansaray" target="_blank">LinkedIn</a></li>
+    <li>👩🏽‍💻 <a href="https://github.com/LizRach" target="_blank">GitHub</a></li>
+  </ul>
+
+  <p>Whether it’s a security project, research idea, or just a good conversation about tech — I’d love to hear from you.</p>
+</div>
+
 
 ---
 
