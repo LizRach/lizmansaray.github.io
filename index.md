@@ -4,7 +4,7 @@ title: "Elizabeth Mansaray"
 subtitle: "Cybersecurity Enthusiast | Security Analyst | IT Professional"
 ---
 
-### 🧠 About Me
+### <span class="section-title">🧠 About Me</span>
 
 <div class="card">
   <p>Hi, I'm <strong>Elizabeth Mansaray</strong>, a cybersecurity enthusiast with a love for uncovering how systems work and how to protect them. My journey began with curiosity - wanting to understand the “why” behind security breaches and how technology can be both powerful and vulnerable at the same time.</p>
@@ -15,7 +15,7 @@ subtitle: "Cybersecurity Enthusiast | Security Analyst | IT Professional"
 </div>
 
 
-### 💻 Projects
+### <span class="section-title">💻 Projects</span>
 
 <div class="card">
   <h3>Firewall Configuration and Management</h3>
@@ -51,11 +51,10 @@ subtitle: "Cybersecurity Enthusiast | Security Analyst | IT Professional"
   <h3>SIEM Threat Detection using Splunk</h3>
   <p>Configured Splunk to monitor simulated network logs for suspicious patterns, created detection rules, and developed custom dashboards for real-time threat visibility.</p>
   <p><strong>Skills:</strong> Splunk SIEM, Log Analysis, Security Monitoring, Alerting</p>
-</div>  
-
+</div>
 ---
 
-### 📫 Contact
+### <span class="section-title">📫 Contact</span>
 
 <div class="card">
   <p>Thank you for visiting my portfolio! I’m always open to connecting with people who share an interest in cybersecurity, technology, or creative problem-solving.</p>
