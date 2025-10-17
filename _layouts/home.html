@@ -3,7 +3,7 @@ layout: default
 ---
 
 <style>
-  /* 🌌 Page background with subtle animated gradient */
+  /* 🌌 Animated background gradient */
   body {
     background: linear-gradient(-45deg, #0a0f24, #001f3f, #0a0f24, #002b5c);
     background-size: 400% 400%;
@@ -18,15 +18,15 @@ layout: default
     100% { background-position: 0% 50%; }
   }
 
-  /* 🌟 Wrapper centers the page */
+  /* 🌟 Wrapper centers everything */
   .wrapper {
     max-width: 900px;
-    margin: 0 auto;        /* center the whole page */
+    margin: 0 auto;          /* centers wrapper */
     padding: 0 20px;
-    text-align: center;    /* centers headings, images, cards */
+    text-align: center;      /* center headings and paragraphs */
   }
 
-  /* 💙 Header with glowing profile image */
+  /* 💙 Header */
   header {
     display: flex;
     flex-direction: column;
@@ -82,28 +82,19 @@ layout: default
     100% { text-shadow: 0 0 5px #00ffff; color: #00ffff; }
   }
 
-  /* Main content area */
-  main.content {
-    margin: 0 auto;
-    max-width: 900px;
-    padding-bottom: 50px;
-    text-align: center; /* ensures headings and cards are centered */
-  }
-
-  /* 💻 Cards styling */
+  /* 💻 Cards */
   .card {
-    display: inline-block;  /* center the card itself */
-    text-align: left;       /* content inside stays left-aligned */
-    vertical-align: top;
-    margin: 20px auto;
+    display: block;           /* ensures margin auto works */
+    margin: 20px auto;        /* center cards horizontally */
     max-width: 800px;
-    background-color: #001f3f; /* deep blue */
+    background-color: #001f3f;
     border: 2px solid #00ffff;
     border-radius: 10px;
     padding: 20px;
     color: #e6f1ff;
     box-shadow: 0 0 10px rgba(0,255,255,0.2);
     transition: all 0.3s ease-in-out;
+    text-align: left;         /* keep card content readable */
   }
 
   .card:hover {
@@ -116,24 +107,24 @@ layout: default
     text-shadow: 0 0 5px #00ffff;
   }
 
-  /* Fade-in animation for cards and sections */
+  /* Fade-in animation for content */
+  main.content > * {
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+  }
+
   @keyframes fadeInUp {
     0% { opacity: 0; transform: translateY(20px); }
     100% { opacity: 1; transform: translateY(0); }
   }
 
-  .content > * {
-    opacity: 0;
-    animation: fadeInUp 1s forwards;
-  }
-
   /* Stagger card fade-in */
-  .content .card:nth-of-type(1) { animation-delay: 0.3s; }
-  .content .card:nth-of-type(2) { animation-delay: 0.5s; }
-  .content .card:nth-of-type(3) { animation-delay: 0.7s; }
-  .content .card:nth-of-type(4) { animation-delay: 0.9s; }
-  .content .card:nth-of-type(5) { animation-delay: 1.1s; }
-  .content .card:nth-of-type(6) { animation-delay: 1.3s; }
+  main.content .card:nth-of-type(1) { animation-delay: 0.3s; }
+  main.content .card:nth-of-type(2) { animation-delay: 0.5s; }
+  main.content .card:nth-of-type(3) { animation-delay: 0.7s; }
+  main.content .card:nth-of-type(4) { animation-delay: 0.9s; }
+  main.content .card:nth-of-type(5) { animation-delay: 1.1s; }
+  main.content .card:nth-of-type(6) { animation-delay: 1.3s; }
 
   /* Links */
   a {
