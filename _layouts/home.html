@@ -1,11 +1,49 @@
 ---
 layout: default
 ---
+<style>
+  /* ✨ Neon teal text glow animation for section titles */
+  @keyframes textGlow {
+    0% { text-shadow: 0 0 5px #00ffff; color: #00ffff; }
+    50% { text-shadow: 0 0 20px #00ffff; color: #00e6e6; }
+    100% { text-shadow: 0 0 5px #00ffff; color: #00ffff; }
+  }
+
+  h2.section-title {
+    text-align: center;
+    font-size: 1.8em;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    animation: textGlow 4s ease-in-out infinite;
+    letter-spacing: 1px;
+  }
+</style>
 
 <div class="wrapper">
-  <header>
-    <h1>{{ page.title }}</h1>
-    <p class="subtitle">{{ page.subtitle }}</p>
+
+  <!-- 💙 Cybersecurity-Themed Header with Animated Glow -->
+  <header style="
+    text-align: center;
+    margin-top: 0;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #0a0f24, #001f3f, #0a0f24);
+    border-bottom: 2px solid #00ffff;
+  ">
+    <style>
+      /* 🌀 Subtle glow animation */
+      @keyframes glowPulse {
+        0% { box-shadow: 0 0 15px rgba(0,255,255,0.4); }
+        50% { box-shadow: 0 0 30px rgba(0,255,255,0.8); }
+        100% { box-shadow: 0 0 15px rgba(0,255,255,0.4); }
+      }
+    </style>
+
+    <img src="profile.jpg" alt="Elizabeth Mansaray" 
+         style="width:150px;height:150px;border-radius:50%;object-fit:cover;margin-bottom:15px;
+                animation: glowPulse 4s infinite ease-in-out;">
+
+    <h1 style="color:#00ffff; margin-bottom:5px;">Elizabeth Mansaray</h1>
+    <p class="subtitle" style="color:#b0c4de;">Cybersecurity Enthusiast | Security Analyst | IT Professional</p>
   </header>
 
   <main class="content">
