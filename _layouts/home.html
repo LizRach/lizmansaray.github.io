@@ -3,110 +3,78 @@ layout: default
 ---
 
 <style>
-  /* Center the whole page content */
-  body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center; /* center wrapper horizontally */
-    background: linear-gradient(-45deg, #0a0f24, #001f3f, #0a0f24, #002b5c);
-    background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;
-    font-family: 'Helvetica', sans-serif;
-  }
-
-  @keyframes gradientBG {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-
-  .wrapper {
-    max-width: 900px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-
-  /* Main Header */
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 20px;
-    background: linear-gradient(135deg, #0a0f24, #001f3f, #0a0f24);
-    border-bottom: 2px solid #00ffff;
-    margin-bottom: 40px;
-    text-align: center;
-  }
-
-  @keyframes glowPulse {
-    0% { box-shadow: 0 0 15px rgba(0,255,255,0.4); }
-    50% { box-shadow: 0 0 30px rgba(0,255,255,0.8); }
-    100% { box-shadow: 0 0 15px rgba(0,255,255,0.4); }
-  }
-
-  header img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
-    animation: glowPulse 4s infinite ease-in-out;
-  }
-
-  header h1 {
-    color: #00ffff;
-    margin-bottom: 5px;
-  }
-
-  header .subtitle {
-    color: #b0c4de;
-  }
-
-  /* Cards */
-  .card {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #001f3f;
-    border: 2px solid #00ffff;
-    border-radius: 10px;
-    color: #e6f1ff;
-    text-align: left;
-    box-shadow: 0 0 10px rgba(0,255,255,0.2);
-  }
-
-  .card h3, .card strong {
-    color: #00ffff;
-    text-shadow: 0 0 5px #00ffff;
-  }
-
-  /* Section Titles */
-  h2, h3 {
-    animation: textGlow 4s ease-in-out infinite;
-    color: #00ffff;
-    text-align: left; /* Section headers aligned left */
-    margin-top: 50px;
-    margin-bottom: 20px;
-  }
-
+  /* ✨ Neon teal text glow animation for section titles */
   @keyframes textGlow {
     0% { text-shadow: 0 0 5px #00ffff; color: #00ffff; }
     50% { text-shadow: 0 0 20px #00ffff; color: #00e6e6; }
     100% { text-shadow: 0 0 5px #00ffff; color: #00ffff; }
   }
+
+  h2.section-title {
+    text-align: center;
+    font-size: 1.8em;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    animation: textGlow 4s ease-in-out infinite;
+    letter-spacing: 1px;
+  }
+
+  /* 🌀 Glow animation for profile image */
+  @keyframes glowPulse {
+    0% { box-shadow: 0 0 15px rgba(0,255,255,0.4); }
+    50% { box-shadow: 0 0 30px rgba(0,255,255,0.8); }
+    100% { box-shadow: 0 0 15px rgba(0,255,255,0.4); }
+  }
+  /* 💻 Cyber-themed project and section cards */
+.card {
+  background-color: #0a0f24;   /* deep navy background */
+  border: 2px solid #00ffff;   /* neon teal border */
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  color: #e6f1ff;
+  box-shadow: 0 0 10px rgba(0,255,255,0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 0 25px rgba(0,255,255,0.7);
+  transform: translateY(-3px);
+}
+
+/* Glow effect for titles inside cards */
+.card h3, .card strong {
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff;
+}
 </style>
 
 <div class="wrapper">
-  <header>
-    <img src="profile.jpg" alt="Elizabeth Mansaray">
-    <h1>Elizabeth Mansaray</h1>
-    <p class="subtitle">Cybersecurity Enthusiast | Security Analyst | IT Professional</p>
+
+  <!-- 💙 Cybersecurity-Themed Header with Centered Glowing Image -->
+  <header style="
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #0a0f24, #001f3f, #0a0f24);
+    border-bottom: 2px solid #00ffff;
+    text-align: center;
+  ">
+    <img src="profile.jpg" alt="Elizabeth Mansaray" 
+         style="width:150px;height:150px;border-radius:50%;object-fit:cover;margin-bottom:15px;
+                animation: glowPulse 4s infinite ease-in-out;">
+
+    <h1 style="color:#00ffff; margin-bottom:5px;">Elizabeth Mansaray</h1>
+    <p class="subtitle" style="color:#b0c4de;">Cybersecurity Enthusiast | Security Analyst | IT Professional</p>
   </header>
 
-  <main>
+  <!-- Main markdown content -->
+  <main class="content">
     {{ content }}
   </main>
+
 </div>
