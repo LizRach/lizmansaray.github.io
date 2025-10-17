@@ -4,19 +4,19 @@ title: "Elizabeth Mansaray"
 subtitle: "Cybersecurity Enthusiast | Security Analyst | IT Professional"
 ---
 
-### <span class="section-title">🧠 About Me</span>
+<div class="content-wrapper">
+
+### 🧠 About Me
 
 <div class="card">
-  <p>Hi, I'm <strong>Elizabeth Mansaray</strong>, a passionate and detail-oriented cybersecurity enthusiast dedicated to protecting digital systems and solving security challenges.</p>
+  <p>Hi, I'm <strong>Elizabeth Mansaray</strong>, a cybersecurity enthusiast with a love for uncovering how systems work and how to protect them. My journey began with curiosity — wanting to understand the “why” behind security breaches and how technology can be both powerful and vulnerable at the same time.</p>
 
-  <p>I enjoy hands-on labs and projects exploring threat detection, network security, and digital forensics. Whether it’s analyzing packets, configuring firewalls, or investigating simulated incidents, I’m always eager to learn, experiment, and grow so I can help protect data.</p>
+  <p>I enjoy working on hands-on labs and projects that explore threat detection, network security, and digital forensics. Whether it’s analyzing packets, configuring firewalls, or investigating a simulated incident, I’m always eager to learn, experiment, and grow so I can help protect data.</p>
 
   <p>Outside of cybersecurity, I value creativity, storytelling, and the simple joy of building things that make an impact. I’m currently seeking opportunities to contribute to a security team where I can learn, collaborate, and help make systems safer for everyone.</p>
 </div>
 
----
-
-### <span class="section-title">💻 Projects</span>
+### 💻 Projects
 
 <div class="card">
   <h3>Firewall Configuration and Management</h3>
@@ -54,12 +54,12 @@ subtitle: "Cybersecurity Enthusiast | Security Analyst | IT Professional"
   <p><strong>Skills:</strong> Splunk SIEM, Log Analysis, Security Monitoring, Alerting</p>
 </div>
 
----
-
-### <span class="section-title">📫 Contact</span>
+### 📫 Contact
 
 <div class="card">
   <p>Thank you for visiting my portfolio! I’m always open to connecting with people who share an interest in cybersecurity, technology, or creative problem-solving.</p>
+
+  <p>If you’d like to reach out about collaboration, mentorship, or opportunities — feel free to send me a message or connect on LinkedIn.</p>
 
   <p><strong>Let’s Connect:</strong></p>
   <ul>
@@ -71,6 +71,4 @@ subtitle: "Cybersecurity Enthusiast | Security Analyst | IT Professional"
   <p>Whether it’s a security project, research idea, or just a good conversation about tech — I’d love to hear from you.</p>
 </div>
 
----
-
-> 💬 “Cybersecurity is not just about protecting systems- it’s about protecting people.”
+</div> <!-- end of content-wrapper -->
