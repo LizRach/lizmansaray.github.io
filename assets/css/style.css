@@ -1,0 +1,39 @@
+/* Cybersecurity Portfolio Theme – Elizabeth Mansaray */
+
+body {
+  background-color: #0a192f;
+  color: #e6f1ff;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: #64ffda;
+}
+
+a {
+  color: #64ffda;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.subtitle {
+  color: #8892b0;
+}
+
+.card {
+  background: #112240;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+header, main {
+  margin-bottom: 1.5rem;
+}
