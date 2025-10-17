@@ -1,4 +1,7 @@
-theme: jekyll-theme-modern-resume
+remote_theme: sproogen/resume-theme
+plugins:
+  - jekyll-remote-theme
+
 title: "Elizabeth Mansaray"
 description: "Cybersecurity Enthusiast | Security Analyst | IT Professional"
 show_downloads: false
