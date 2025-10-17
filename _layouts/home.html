@@ -89,6 +89,17 @@ layout: default
     z-index: 1;
   }
 
+  /* 🔹 Content wrapper centers Markdown content */
+  .content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* Optional: left-align card text while keeping sections centered */
+  .card p {
+    text-align: left;
+  }
+
   /* 💙 Cybersecurity-Themed Header with Centered Glowing Image */
   header {
     display: flex;
@@ -143,7 +154,8 @@ layout: default
   </header>
 
   <main class="content">
-    {{ content }}
+    <div class="content-wrapper">
+      {{ content }}
+    </div>
   </main>
 </div>
-
