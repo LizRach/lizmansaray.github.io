@@ -12,7 +12,7 @@ I’m constantly learning, building projects, and exploring how technology can b
 ### 🧠 About Me
 
 <div class="card">
-  <p>Hi, I'm <strong>Elizabeth Mansaray</strong> — a cybersecurity enthusiast with a love for uncovering how systems work and how to protect them. My journey began with curiosity — wanting to understand the “why” behind security breaches and how technology can be both powerful and vulnerable at the same time.</p>
+  <p>Hi, I'm <strong>Elizabeth Mansaray</strong> -a cybersecurity enthusiast with a love for uncovering how systems work and how to protect them. My journey began with curiosity - wanting to understand the “why” behind security breaches and how technology can be both powerful and vulnerable at the same time.</p>
 
   <p>I enjoy working on hands-on labs and projects that explore threat detection, network security, and digital forensics. Whether it’s analyzing packets, configuring firewalls, or investigating a simulated incident, I’m always eager to learn, experiment, and grow so i can help protect data.</p>
 
