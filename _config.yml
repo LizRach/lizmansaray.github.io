@@ -1,0 +1,19 @@
+remote_theme: sproogen/modern-resume-theme
+title: "Elizabeth Mansaray"
+description: "Cybersecurity Portfolio & Resume"
+repository: "lizmansaray/lizmansaray.github.io"
+
+# Personal Info
+name: "Elizabeth Mansaray"
+email: "chelmans09@gmail.com"
+linkedin_username: "Elizabeth Mansaray"
+github_username: "LizRach"
+about_profile_image: "profile.jpg"   # (you can add one later)
+about_content: |
+  Hi, I'm Elizabeth — a passionate Security Analyst focused on threat detection, network defense, and incident response.
+  I love exploring how systems can be both vulnerable and resilient.
+
+# Appearance
+darkmode: true
+style: modern
+accent_color: "#4682B4"   # steel-blue tone
