@@ -3,55 +3,7 @@ layout: default
 ---
 
 <style>
-  /* ✨ Neon teal text glow animation for section titles */
-  @keyframes textGlow {
-    0% { text-shadow: 0 0 5px #00ffff; color: #00ffff; }
-    50% { text-shadow: 0 0 20px #00ffff; color: #00e6e6; }
-    100% { text-shadow: 0 0 5px #00ffff; color: #00ffff; }
-  }
-
-  h2.section-title {
-    text-align: center;
-    font-size: 1.8em;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    animation: textGlow 4s ease-in-out infinite;
-    letter-spacing: 1px;
-  }
-
-  /* 🌀 Glow animation for profile image */
-  @keyframes glowPulse {
-    0% { box-shadow: 0 0 15px rgba(0,255,255,0.4); }
-    50% { box-shadow: 0 0 30px rgba(0,255,255,0.8); }
-    100% { box-shadow: 0 0 15px rgba(0,255,255,0.4); }
-  }
-
-  /* 💻 Cyber-themed project and section cards */
-  .card {
-    background-color: #0a0f24;
-    border: 2px solid #00ffff;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    color: #e6f1ff;
-    box-shadow: 0 0 10px rgba(0,255,255,0.2);
-    transition: all 0.3s ease-in-out;
-    position: relative;
-    z-index: 1;
-  }
-
-  .card:hover {
-    box-shadow: 0 0 25px rgba(0,255,255,0.7);
-    transform: translateY(-3px);
-  }
-
-  .card h3, .card strong {
-    color: #00ffff;
-    text-shadow: 0 0 5px #00ffff;
-  }
-
-  /* 🌌 Subtle animated background gradient */
+  /* 🌌 Background with subtle animated gradient */
   body {
     background: linear-gradient(-45deg, #0a0f24, #001f3f, #0a0f24, #002b5c);
     background-size: 400% 400%;
@@ -66,53 +18,32 @@ layout: default
     100% { background-position: 0% 50%; }
   }
 
-  /* 💠 Subtle digital grid overlay */
-  body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: radial-gradient(rgba(0,255,255,0.05) 1px, transparent 1px);
-    background-size: 20px 20px;
-    pointer-events: none;
-    z-index: 0;
-  }
-
-  /* 🔹 Wrapper centers all content */
+  /* Wrapper to center the entire content */
   .wrapper {
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 0 20px;
     position: relative;
     z-index: 1;
   }
 
-  /* 🔹 Content wrapper centers Markdown content */
-  .content-wrapper {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-
-  /* Optional: left-align card text while keeping sections centered */
-  .card p {
-    text-align: center;
-  }
-
-  /* 💙 Cybersecurity-Themed Header with Centered Glowing Image */
+  /* 💙 Header with glowing profile image */
   header {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 0;
     padding: 50px 20px;
     background: linear-gradient(135deg, #0a0f24, #001f3f, #0a0f24);
     border-bottom: 2px solid #00ffff;
     text-align: center;
-    position: relative;
-    z-index: 1;
+    margin-bottom: 40px;
+  }
+
+  @keyframes glowPulse {
+    0% { box-shadow: 0 0 15px rgba(0,255,255,0.4); }
+    50% { box-shadow: 0 0 30px rgba(0,255,255,0.8); }
+    100% { box-shadow: 0 0 15px rgba(0,255,255,0.4); }
   }
 
   header img {
@@ -133,7 +64,77 @@ layout: default
     color: #b0c4de;
   }
 
-  /* 🔗 Neon link hover effect */
+  /* ✨ Neon section headings */
+  h2, h3 {
+    color: #00ffff;
+    text-shadow: 0 0 5px #00ffff;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    animation: textGlow 4s ease-in-out infinite;
+    letter-spacing: 1px;
+  }
+
+  @keyframes textGlow {
+    0% { text-shadow: 0 0 5px #00ffff; color: #00ffff; }
+    50% { text-shadow: 0 0 20px #00ffff; color: #00e6e6; }
+    100% { text-shadow: 0 0 5px #00ffff; color: #00ffff; }
+  }
+
+  /* Main content area - center everything */
+  main.content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+
+  /* Card styling */
+  .card {
+    background-color: #001f3f; /* deep blue theme */
+    border: 2px solid #00ffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    color: #e6f1ff;
+    box-shadow: 0 0 10px rgba(0,255,255,0.2);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .card:hover {
+    box-shadow: 0 0 25px rgba(0,255,255,0.7);
+    transform: translateY(-3px);
+  }
+
+  .card h3, .card strong {
+    color: #00ffff;
+    text-shadow: 0 0 5px #00ffff;
+  }
+
+  /* Fade-in animation for cards and sections */
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  .content > * {
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+  }
+
+  /* Stagger cards */
+  .content .card:nth-of-type(1) { animation-delay: 0.3s; }
+  .content .card:nth-of-type(2) { animation-delay: 0.5s; }
+  .content .card:nth-of-type(3) { animation-delay: 0.7s; }
+  .content .card:nth-of-type(4) { animation-delay: 0.9s; }
+  .content .card:nth-of-type(5) { animation-delay: 1.1s; }
+  .content .card:nth-of-type(6) { animation-delay: 1.3s; }
+
+  /* Links styling */
   a {
     color: #00ffff;
     text-decoration: none;
@@ -154,8 +155,6 @@ layout: default
   </header>
 
   <main class="content">
-    <div class="content-wrapper">
-      {{ content }}
-    </div>
+    {{ content }}
   </main>
 </div>
