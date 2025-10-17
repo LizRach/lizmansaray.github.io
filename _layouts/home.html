@@ -18,14 +18,15 @@ layout: default
     100% { background-position: 0% 50%; }
   }
 
-  /* 🌟 Wrapper centers entire page */
+  /* 🌟 Wrapper centers the page */
   .wrapper {
     max-width: 900px;
-    margin: 0 auto;
+    margin: 0 auto;        /* center the whole page */
     padding: 0 20px;
+    text-align: center;    /* centers headings, images, cards */
   }
 
-  /* 💙 Header with centered glowing profile image */
+  /* 💙 Header with glowing profile image */
   header {
     display: flex;
     flex-direction: column;
@@ -34,7 +35,6 @@ layout: default
     padding: 50px 20px;
     background: linear-gradient(135deg, #0a0f24, #001f3f, #0a0f24);
     border-bottom: 2px solid #00ffff;
-    text-align: center;
     margin-bottom: 40px;
   }
 
@@ -69,7 +69,6 @@ layout: default
   }
 
   h2 {
-    text-align: center;
     font-size: 2em;
     margin-top: 50px;
     margin-bottom: 20px;
@@ -83,21 +82,25 @@ layout: default
     100% { text-shadow: 0 0 5px #00ffff; color: #00ffff; }
   }
 
-  /* Main content area centered */
+  /* Main content area */
   main.content {
-    max-width: 900px;
     margin: 0 auto;
+    max-width: 900px;
     padding-bottom: 50px;
+    text-align: center; /* ensures headings and cards are centered */
   }
 
-  /* 💻 Card styling */
+  /* 💻 Cards styling */
   .card {
-    background-color: #001f3f; /* deep blue theme */
+    display: inline-block;  /* center the card itself */
+    text-align: left;       /* content inside stays left-aligned */
+    vertical-align: top;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #001f3f; /* deep blue */
     border: 2px solid #00ffff;
     border-radius: 10px;
     padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
     color: #e6f1ff;
     box-shadow: 0 0 10px rgba(0,255,255,0.2);
     transition: all 0.3s ease-in-out;
