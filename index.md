@@ -3,9 +3,14 @@ layout: home
 title: "Elizabeth Mansaray"
 subtitle: "Cybersecurity Enthusiast | Security Analyst | IT Professional"
 ---
-
-👋🏽 Hi, I’m **Elizabeth Mansaray**, a passionate and detail-oriented **Cybersecurity Analyst** dedicated to protecting digital systems and solving security challenges.  
-I’m constantly learning, building projects, and exploring how technology can be used securely and ethically.
+<div style="text-align: center; padding: 60px 20px;">
+  <h1 style="color: #64ffda; font-size: 2.8em; margin-bottom: 10px;">Elizabeth Mansaray</h1>
+  <h2 style="color: #8892b0; font-weight: normal;">Cybersecurity Enthusiast | Security Analyst | IT Professional</h2>
+  <p style="color: #e6f1ff; max-width: 700px; margin: 20px auto;">
+    Passionate about uncovering security gaps, analyzing threats, and building safer systems.  
+    Exploring the intersection of technology, curiosity, AI and Security.
+  </p>
+</div>
 
 ---
 
@@ -65,7 +70,7 @@ I’m constantly learning, building projects, and exploring how technology can b
 <div class="card">
   <p>Thank you for visiting my portfolio! I’m always open to connecting with people who share an interest in cybersecurity, technology, or creative problem-solving.</p>
 
-  <p>If you’d like to reach out about collaboration, mentorship, or opportunities — feel free to send me a message or connect on LinkedIn.</p>
+  <p>If you’d like to reach out about collaboration, mentorship, or opportunities- feel free to send me a message or connect on LinkedIn.</p>
 
   <p><strong>Let’s Connect:</strong></p>
 
