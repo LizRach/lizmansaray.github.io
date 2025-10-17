@@ -10,15 +10,17 @@ I’m constantly learning, building projects, and exploring how technology can b
 ---
 
 ### 🧠 About Me
-- 🎓 Recent graduate with a background in IT and Cybersecurity.
-- 🧩 Interests: Threat Analysis, Network Security, and Cloud Security.
-- 💡 Currently building a portfolio of hands-on cybersecurity labs and projects.
-- 🌍 Open to global opportunities in security operations and analysis.
 
----
+<div class="card">
+  <p>Hi, I'm <strong>Elizabeth Mansaray</strong> — a cybersecurity enthusiast with a love for uncovering how systems work and how to protect them. My journey began with curiosity — wanting to understand the “why” behind security breaches and how technology can be both powerful and vulnerable at the same time.</p>
+
+  <p>I enjoy working on hands-on labs and projects that explore threat detection, network security, and digital forensics. Whether it’s analyzing packets, configuring firewalls, or investigating a simulated incident, I’m always eager to learn, experiment, and grow so i can help protect data.</p>
+
+  <p>Outside of cybersecurity, I value creativity, storytelling, and the simple joy of building things that make an impact. I’m currently seeking opportunities to contribute to a security team where I can learn, collaborate, and help make systems safer for everyone.</p>
+</div>
+
 
 ### 💻 Projects
-## Projects
 
 <div class="card">
   <h3>Firewall Configuration and Management</h3>
