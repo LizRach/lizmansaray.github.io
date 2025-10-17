@@ -5,3 +5,7 @@ plugins:
 title: "Elizabeth Mansaray"
 description: "Cybersecurity Enthusiast | Security Analyst | IT Professional"
 show_downloads: false
+
+# Allow GitHub Pages to use the remote theme
+github:
+  is_project_page: false
