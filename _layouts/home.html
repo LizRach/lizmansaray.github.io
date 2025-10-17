@@ -8,6 +8,7 @@ layout: default
     background: linear-gradient(-45deg, #0a0f24, #001f3f, #0a0f24, #002b5c);
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
+    /*Crucial for centering - remove default body margin */
     margin: 0;
     font-family: 'Helvetica', sans-serif;
   }
@@ -85,12 +86,12 @@ layout: default
     100% { text-shadow: 0 0 5px #00ffff; color: #00ffff; }
   }
 
-  /* Main content area - center everything */
-  main.content {
-    max-width: 900px;
-    margin: 0 auto;
-    padding-bottom: 50px;
-  }
+ /* Remove this redundant centering since .wrapper already centers everything */
+  /* main.content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  } */
 
   /* Card styling */
   .card {
