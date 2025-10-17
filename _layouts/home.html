@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <style>
   /* ✨ Neon teal text glow animation for section titles */
   @keyframes textGlow {
@@ -17,27 +18,29 @@ layout: default
     animation: textGlow 4s ease-in-out infinite;
     letter-spacing: 1px;
   }
+
+  /* 🌀 Glow animation for profile image */
+  @keyframes glowPulse {
+    0% { box-shadow: 0 0 15px rgba(0,255,255,0.4); }
+    50% { box-shadow: 0 0 30px rgba(0,255,255,0.8); }
+    100% { box-shadow: 0 0 15px rgba(0,255,255,0.4); }
+  }
 </style>
 
 <div class="wrapper">
 
-  <!-- 💙 Cybersecurity-Themed Header with Animated Glow -->
+  <!-- 💙 Cybersecurity-Themed Header with Centered Glowing Image -->
   <header style="
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-top: 0;
     padding: 50px 20px;
     background: linear-gradient(135deg, #0a0f24, #001f3f, #0a0f24);
     border-bottom: 2px solid #00ffff;
+    text-align: center;
   ">
-    <style>
-      /* 🌀 Subtle glow animation */
-      @keyframes glowPulse {
-        0% { box-shadow: 0 0 15px rgba(0,255,255,0.4); }
-        50% { box-shadow: 0 0 30px rgba(0,255,255,0.8); }
-        100% { box-shadow: 0 0 15px rgba(0,255,255,0.4); }
-      }
-    </style>
-
     <img src="profile.jpg" alt="Elizabeth Mansaray" 
          style="width:150px;height:150px;border-radius:50%;object-fit:cover;margin-bottom:15px;
                 animation: glowPulse 4s infinite ease-in-out;">
@@ -46,7 +49,9 @@ layout: default
     <p class="subtitle" style="color:#b0c4de;">Cybersecurity Enthusiast | Security Analyst | IT Professional</p>
   </header>
 
+  <!-- Main markdown content -->
   <main class="content">
     {{ content }}
   </main>
+
 </div>
