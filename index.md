@@ -27,9 +27,9 @@ I’ll be uploading new labs, simulations, and scripts demonstrating skills in:
 ---
 
 ### 📫 Contact
-- **LinkedIn:** [linkedin.com/in/elizabethmansaray](https://linkedin.com/in/elizabethmansaray)  
-- **GitHub:** [github.com/lizmansaray](https://github.com/lizmansaray)  
-- **Email:** chelmans09@gmail.com *(replace with your real one if you’d like)*
+- **LinkedIn:** [linkedin.com/in/elizabethrachaelmansaray](https://linkedin.com/in/elizabethrachaelmansaray)  
+- **GitHub:** [github.com/LizRach](https://github.com/LizRach)  
+- **Email:** chelmans09@gmail.com
 
 ---
 
