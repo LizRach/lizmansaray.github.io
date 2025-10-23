@@ -26,10 +26,12 @@ subtitle: "Cybersecurity Enthusiast | Security Analyst | IT Professional"
 
 
 <div class="card">
-  <h3>Wireshark Packet Analysis</h3>
-  <p>Captured and analyzed live network traffic using Wireshark to identify anomalies, suspicious packets, and network latency issues for performance and security optimization.</p>
-  <p><strong>Skills:</strong> Wireshark, Packet Analysis, TCP/IP, Network Monitoring</p>
+  <h3>Wireshark Packet Analysis Lab</h3>
+  <p>Captured and analyzed network traffic using <strong>Wireshark</strong> on <strong>Kali Linux</strong>. Examined <strong>HTTP</strong>, <strong>DNS</strong>, and <strong>TCP</strong> packets, and documented protocol statistics to demonstrate practical network traffic analysis skills.</p>
+  <p><strong>Skills:</strong> Network Analysis, Wireshark, Kali Linux, Packet Capture, TCP/IP, DNS, HTTP</p>
+  <p><a href="https://github.com/<LizRach>/wireshark-lab" target="_blank">🔗 View Project on GitHub</a></p>
 </div>
+
 
 <div class="card">
   <h3>Network Vulnerability Assessment</h3>
