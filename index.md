@@ -18,10 +18,12 @@ subtitle: "Cybersecurity Enthusiast | Security Analyst | IT Professional"
 ### <span class="section-title">💻 Projects</span>
 
 <div class="card">
-  <h3>Firewall Configuration and Management</h3>
-  <p>Configured and managed network firewalls to control inbound and outbound traffic, applying access control lists (ACLs) and security rules to minimize unauthorized access and potential threats.</p>
-  <p><strong>Skills:</strong> Network Security, Access Control, pfSense, Firewall Policies</p>
+  <h3>Firewall Configuration and Management (UFW on Linux)</h3>
+  <p>Configured and managed a firewall using <strong>UFW</strong> on <strong>Kali Linux</strong> to control inbound and outbound traffic. Implemented security rules, monitored logs, and documented each step to demonstrate practical firewall administration skills.</p>
+  <p><strong>Skills:</strong> Network Security, Linux, UFW, Firewall Rules, System Administration</p>
+  <p><a href="https://github.com/LizRach/firewall-configuration-and-management" target="_blank">🔗 View Project on GitHub</a></p>
 </div>
+
 
 <div class="card">
   <h3>Wireshark Packet Analysis</h3>
