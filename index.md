@@ -40,7 +40,7 @@ subtitle: "Cybersecurity Enthusiast | Security Analyst | IT Professional"
   <p><strong>Project Resources:</strong></p>
   <ul>
     <li><a href="https://github.com/LizRach/vuln-assessment" target="_blank">View GitHub Repository</a></li>
-    <li><a href="https://github.com/LizRach/vuln-assessment/blob/main/report/windows-scan-report.pdf" target="_blank">Download Scan Report (PDF)</a></li>
+    <li><a href="https://github.com/LizRach/vuln-assessment/raw/main/report/windows-scan-report.pdf" target="_blank">Download Scan Report (PDF)</a></li>
   </ul>
 </div>
 
