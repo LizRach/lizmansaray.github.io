@@ -35,9 +35,15 @@ subtitle: "Cybersecurity Enthusiast | Security Analyst | IT Professional"
 
 <div class="card">
   <h3>Network Vulnerability Assessment</h3>
-  <p>Performed a comprehensive vulnerability scan using Nmap and Nessus to identify and assess network weaknesses, followed by reporting and prioritizing remediation strategies.</p>
-  <p><strong>Skills:</strong> Nmap, Nessus, Risk Assessment, Vulnerability Management</p>
+  <p>Performed a comprehensive vulnerability scan on a Windows host using <strong>Nmap</strong> and <strong>OpenVAS (Greenbone Vulnerability Manager)</strong> to identify and assess network and host weaknesses. Generated detailed reports with CVE references and documented findings for remediation.</p>
+  <p><strong>Skills:</strong> Nmap, OpenVAS, Risk Assessment, Vulnerability Management</p>
+  <p><strong>Project Resources:</strong></p>
+  <ul>
+    <li><a href="https://github.com/LizRach/vuln-assessment" target="_blank">View GitHub Repository</a></li>
+    <li><a href="https://github.com/LizRach/vuln-assessment/blob/main/report/windows-scan-report.pdf" target="_blank">Download Scan Report (PDF)</a></li>
+  </ul>
 </div>
+
 
 <div class="card">
   <h3>Malware Behavior Analysis Project</h3>
