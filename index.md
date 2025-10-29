@@ -39,7 +39,7 @@ subtitle: "Cybersecurity Enthusiast | Security Analyst | IT Professional"
   <p><strong>Skills:</strong> Nmap, OpenVAS, Risk Assessment, Vulnerability Management</p>
   <p><strong>Project Resources:</strong></p>
   <ul>
-    <li><a href="https://github.com/LizRach/vuln-assessment" target="_blank">View GitHub Repository</a></li>
+    <li><a href="https://github.com/LizRach/vuln-assessment" target="_blank">View Project on GitHub</a></li>
    <li><a href="https://github.com/LizRach/vuln-assessment/raw/main/reports/windows-scan-report.pdf" target="_blank">Download Scan Report (PDF)</a></li>
   </ul>
 </div>
