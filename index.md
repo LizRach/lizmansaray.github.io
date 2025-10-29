@@ -46,18 +46,6 @@ subtitle: "Cybersecurity Enthusiast | Security Analyst | IT Professional"
 
 
 <div class="card">
-  <h3>Malware Behavior Analysis Project</h3>
-  <p>Analyzed suspicious executables in a sandbox environment to determine behavioral patterns, persistence mechanisms, and indicators of compromise (IOCs).</p>
-  <p><strong>Skills:</strong> Malware Analysis, Any.Run, VirusTotal, Threat Intelligence</p>
-</div>
-
-<div class="card">
-  <h3>Incident Response Simulation</h3>
-  <p>Led a simulated phishing attack investigation, performing log analysis, system triage, and reporting to strengthen detection and containment capabilities.</p>
-  <p><strong>Skills:</strong> Incident Response, Digital Forensics, Phishing Detection, Playbook Creation</p>
-</div>
-
-<div class="card">
   <h3>SIEM Threat Detection using Splunk</h3>
   <p>Configured Splunk to monitor simulated network logs for suspicious patterns, created detection rules, and developed real-time alerting for failed SSH login attempts. This lab demonstrates skills in event correlation, incident detection, and security monitoring using SIEM tools.</p>
   <p><strong>Skills:</strong> Splunk, SIEM, Threat Detection, Log Analysis, Incident Response</p>
