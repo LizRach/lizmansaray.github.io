@@ -29,7 +29,7 @@ subtitle: "Cybersecurity Enthusiast | Security Analyst | IT Professional"
   <h3>Wireshark Packet Analysis Lab</h3>
   <p>Captured and analyzed network traffic using <strong>Wireshark</strong> on <strong>Kali Linux</strong>. Examined <strong>HTTP</strong>, <strong>DNS</strong>, and <strong>TCP</strong> packets, and documented protocol statistics to demonstrate practical network traffic analysis skills.</p>
   <p><strong>Skills:</strong> Network Analysis, Wireshark, Kali Linux, Packet Capture, TCP/IP, DNS, HTTP</p>
-  <p><a href="https://github.com/<LizRach>/wireshark-lab" target="_blank">🔗 View Project on GitHub</a></p>
+  <p><a href="https://github.com/LizRach/wireshark-lab" target="_blank">🔗 View Project on GitHub</a></p>
 </div>
 
 
@@ -61,7 +61,7 @@ subtitle: "Cybersecurity Enthusiast | Security Analyst | IT Professional"
   <h3>SIEM Threat Detection using Splunk</h3>
   <p>Configured Splunk to monitor simulated network logs for suspicious patterns, created detection rules, and developed real-time alerting for failed SSH login attempts. This lab demonstrates skills in event correlation, incident detection, and security monitoring using SIEM tools.</p>
   <p><strong>Skills:</strong> Splunk, SIEM, Threat Detection, Log Analysis, Incident Response</p>
-  <p><a href="https://github.com/LizRach/SIEM_threat-detection" target="_blank">🔗 View Project on GitHub</a></p>
+  <p><a href="https://github.com/LizRach/SIEM-threat-detection" target="_blank">🔗 View Project on GitHub</a></p>
 </div>
 
 ---
